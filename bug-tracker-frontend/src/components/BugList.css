@@ -1,0 +1,309 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Body */
+body{
+    margin:0;
+    background: linear-gradient(135deg,#eef2f7,#d9e4f5);
+    min-height:100vh;
+    font-family:'Inter',sans-serif;
+}
+
+/* Main container */
+.container{
+  text-align:center;
+  width:80%;
+  max-width:1000px;
+  margin:auto;
+  padding:25px;
+  background:white;
+  border-radius:12px;
+  box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Section blocks */
+.section{
+  background:#f8fafc;
+  margin-top:30px;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
+
+.section:hover{
+  transform:translateY(-3px);
+}
+
+/* Titles */
+.app-title{
+  text-align:center;
+  font-size:36px;
+  font-weight:700;
+  margin-top:20px;
+  color:#1f2937;
+  letter-spacing:1px;
+}
+
+.tagline{
+  text-align:center;
+  color:#6b7280;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:28px;
+  font-weight:600;
+  margin:25px 0;
+  text-align: center;
+}
+
+h2{
+  font-size:22px;
+  font-weight:600;
+  margin:20px 0 15px 0;
+}
+
+/* Dashboard cards */
+.stats{
+  display:flex;
+  gap:20px;
+  margin:20px 0;
+  justify-content:space-between;
+}
+
+.card{
+  flex:1;
+  padding:20px;
+  border-radius:10px;
+  color:white;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  min-width:200px;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.open{
+  background:#ef4444;
+}
+
+.closed{
+  background:#22c55e;
+}
+
+.total{
+  background:#3b82f6;
+}
+
+/* Form */
+.form-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:30px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select{
+  padding:10px;
+  font-size:14px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+}
+
+/* Add bug button */
+.form-container button{
+  grid-column:span 2;
+  padding:10px;
+  background:#3b82f6;
+  color:white;
+  border:none;
+  cursor:pointer;
+  justify-self:center;
+  width:30%;
+  border-radius:6px;
+  font-weight:500;
+}
+
+.form-container button:hover{
+  background:#2563eb;
+}
+
+/* Controls */
+.controls{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin:20px;
+  justify-content:space-between;
+  font-weight:500;
+}
+
+.controls select{
+  padding:6px 10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+/* Search box */
+.search-wrapper{
+  position:relative;
+  display:inline-block;
+}
+
+.search-box{
+  padding:8px 8px 8px 35px;
+  width:250px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.search-box:focus{
+  outline:none;
+  border-color:#3b82f6;
+}
+
+.search-icon{
+  position:absolute;
+  left:10px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#888;
+}
+
+/* Filter */
+.filter-container{
+  margin:20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.filter-container select{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:14px;
+  cursor:pointer;
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+th,td{
+  padding:10px;
+  text-align:center;
+  border:1px solid #e5e7eb;
+}
+
+th{
+  background:#f3f4f6;
+  color:#1f2937;
+  font-weight:600;
+}
+
+tbody tr:nth-child(even){
+  background:#f9fafb;
+}
+
+tbody tr:hover{
+  background:#eef2ff;
+}
+
+/* Buttons */
+button{
+  padding:6px 10px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.85;
+}
+
+/* Priority badges */
+.priority{
+  padding:5px 10px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:bold;
+  color:white;
+}
+
+.priority.high{
+  background:#ef4444;
+}
+
+.priority.medium{
+  background:#f59e0b;
+}
+
+.priority.low{
+  background:#10b981;
+}
+
+/* Status badges */
+.status{
+  padding:5px 10px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:bold;
+  color:white;
+}
+
+.status.open{
+  background:#ef4444;
+}
+
+.status.closed{
+  background:#22c55e;
+}
+
+.modal-overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background: white;
+    padding: 25px;
+    border-radius:10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+.modal h2{
+    margin-bottom: 15px;
+}
+
+.modal button{
+    margin-top: 15px;
+}
+
+.bug-id{
+    cursor:pointer;
+    color: #3498db;
+    font-weight: bold;
+}
+.bug-id:hover{
+    text-decoration: underline;
+}
