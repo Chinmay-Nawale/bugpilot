@@ -15,6 +15,7 @@ def get_bugs():
         b.title,
         b.description,
         b.priority,
+        b.severity,
         b.status,
         r.username AS reported_by,
         a.username AS assigned_to,
@@ -37,10 +38,11 @@ def get_bugs():
             "title": row[1],
             "description":row[2],
             "priority": row[3],
-            "status": row[4],
-            "reported_by": row[5],
-            "assigned_to": row[6],
-            "created_date": row[7]
+            "severity": row[4],
+            "status": row[5],
+            "reported_by": row[6],
+            "assigned_to": row[7],
+            "created_date": row[8]
         })
 
     return jsonify(bugs)
