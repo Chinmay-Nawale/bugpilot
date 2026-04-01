@@ -34,19 +34,19 @@ Tools:
 ## Screenshots
 
 ### Dashboard
-![Dashboard](../screenshots/bugpilot-dashboard.png)
+![Dashboard](screenshots/bugpilot-dashboard.png)
 
 ### Bug List
-![Bug List](../screenshots/bugpilot-buglist.png)
+![Bug List](screenshots/bugpilot-buglist.png)
 
 ### Create Bug
-![Create Bug](../screenshots/bugpilot-create-bug.png)
+![Create Bug](screenshots/bugpilot-create-bug.png)
 
 ### Bug Details Popup
-![Bug Details](../screenshots/bugpilot-bug-details-popup.png)
+![Bug Details](screenshots/bugpilot-bug-details-popup.png)
 
 ### Backend Structure
-![Backend](../screenshots/backend-structure.png)
+![Backend](screenshots/backend-structure.png)
 
 ### Frontend Structure
-![Frontend](../screenshots/frontend-structure.png)
+![Frontend](screenshots/frontend-structure.png)
